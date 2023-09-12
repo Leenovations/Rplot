@@ -5,7 +5,7 @@ library(ggplot2)
 library(ggbiplot)
 library(ggrepel)
 #------------------------------------------------------------------------#
-Data <- read.table('Result/04.Normal/PCA.DMR.Normalized.txt', header=T, sep='\t')
+Data <- read.table('', header=T, sep='\t')
 Data <- Data[,c(-1,-2,-3)]
 Data <- Data[complete.cases(Data),]
 
@@ -38,4 +38,4 @@ PCA <- ggbiplot(pca_res, ellipse = T,
         legend.title = element_blank(),
         legend.position = "top")
 
-ggsave(PCA, file=paste0('Result/04.Normal/', 'PCA.', 'Normalized', '.pdf'))
+ggsave(PCA, file='.pdf'))
