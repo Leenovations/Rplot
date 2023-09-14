@@ -38,4 +38,4 @@ PCA <- ggbiplot(pca_res, ellipse = T,
         legend.title = element_blank(),
         legend.position = "top")
 
-ggsave(PCA, file='.pdf'))
+ggsave(PCA, file='.pdf')
